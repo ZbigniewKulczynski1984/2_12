@@ -22,6 +22,18 @@ span {
   transition: background-color 0.6s;
 }
 
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #2a92d3;
+}
+
 nav {
   text-transform: uppercase;
   z-index: 1;
@@ -91,6 +103,18 @@ header .hero-img .fa-chevron-down {
   transform: translateX(-50%);
   bottom: 20px;
   color: #fff;
+}
+
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.aboutus .aboutus-card-text {
+  font-size: 14px;
 }
 
 @media (min-width: 1200px) {

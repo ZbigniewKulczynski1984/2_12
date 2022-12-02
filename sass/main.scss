@@ -16,12 +16,24 @@ body {
 
 span {
 	font-weight: bolder;
-	color: $blue-color;
+	color: $main-color;
 }
 
 .shadow-bg {
-    background-color: rgba(0, 0, 0, .8);
-    transition: background-color 0.6s;
+	background-color: rgba(0, 0, 0, 0.8);
+	transition: background-color 0.6s;
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.underline {
+	margin: 0 auto 40px;
+	width: 60px;
+	height: 4px;
+	background-color: $main-color;
 }
 
 // navigation
@@ -30,11 +42,11 @@ nav {
 	z-index: 1;
 
 	a.nav-link {
-		color: $white-color;
+		color: $second-color;
 	}
 
 	a.nav-link:hover {
-		color: $blue-color;
+		color: $main-color;
 	}
 
 	.fa-bars {
@@ -42,18 +54,18 @@ nav {
 	}
 
 	.navbar-brand {
-		color: $white-color;
+		color: $second-color;
 		font-weight: bold;
 	}
 
 	.active {
-		color: $blue-color;
+		color: $main-color;
 	}
 }
 
 // header
 header {
-	color: $white-color;
+	color: $second-color;
 
 	h1 {
 		text-transform: uppercase;
@@ -101,14 +113,31 @@ header {
 			left: 50%;
 			transform: translateX(-50%);
 			bottom: 20px;
-            color: $white-color;
+			color: $second-color;
 		}
 	}
 }
 
+// main
+
+.aboutus {
+    i {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .aboutus-card-title {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .aboutus-card-text {
+        font-size: 14px;
+    }
+}
+
 @media (min-width: 1200px) {
 	header {
-        
 		.hero-img {
 			position: relative;
 			height: 100vh;
@@ -118,23 +147,23 @@ header {
 }
 
 @media (min-width: 768px) {
-    header {
-        h1 {
-            font-size: 40px;
-        }
-        p {
-            font-size: 16px;
-        }
-    }
+	header {
+		h1 {
+			font-size: 40px;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
 }
 
 @media (min-width: 375px) {
-    header {
-        h1 {
-            font-size: 20px;
-        }
-        p {
-            font-size: 14px;
-        }
-    }
+	header {
+		h1 {
+			font-size: 20px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
 }
