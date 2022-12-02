@@ -19,6 +19,7 @@ span {
 
 nav {
   text-transform: uppercase;
+  z-index: 1;
 }
 nav a.nav-link {
   color: #fff;
@@ -50,16 +51,16 @@ header .hero-img {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  z-index: -1;
+  z-index: 0;
 }
-header .hero-shadow {
+header .hero-img .hero-shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: -2;
 }
-header .hero-text {
+header .hero-img .hero-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,10 +68,24 @@ header .hero-text {
   height: 100%;
   padding: 10px;
   text-align: center;
-  z-index: 2;
+  z-index: 5;
 }
-header .hero-text .hero {
+header .hero-img h1 {
   font-size: 50px;
+}
+header .hero-img .hero {
+  font-size: 50px;
+}
+header .hero-img .btn-outline-light {
+  text-transform: uppercase;
+}
+header .hero-img .fa-chevron-down {
+  position: absolute;
+  font-size: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  color: #fff;
 }
 
 @media (min-width: 1200px) {
@@ -78,5 +93,21 @@ header .hero-text .hero {
     position: relative;
     height: 100vh;
     background-image: url("../img/qatar-ga45af88d6_1920.jpg");
+  }
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 40px;
+  }
+  header p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 20px;
+  }
+  header p {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=main.css.map */
