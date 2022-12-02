@@ -17,6 +17,11 @@ span {
   color: #2a92d3;
 }
 
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.6s;
+}
+
 nav {
   text-transform: uppercase;
   z-index: 1;
