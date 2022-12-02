@@ -8,6 +8,10 @@
 	padding: 0;
 }
 
+html {
+    scroll-padding-top: 82px;
+}
+
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
@@ -124,6 +128,7 @@ header {
     i {
         margin-top: 20px;
         font-size: 30px;
+        
     }
 
     .aboutus-card-title {
@@ -133,6 +138,14 @@ header {
 
     .aboutus-card-text {
         font-size: 14px;
+    }
+
+    .aboutus-hover {
+        transition: color 0.5s;
+    }
+
+    .aboutus-hover:hover {
+        color: $main-color;
     }
 }
 

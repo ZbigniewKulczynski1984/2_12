@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 	const nav = document.querySelector('.navbar');
+	const navItems = document.querySelectorAll('.nav-link')
+	const navList = document.querySelector('.navbar-collapse')
 
 	function addShadow() {
 		if (window.scrollY >= 300) {
@@ -8,5 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			nav.classList.remove('shadow-bg');
 		}
 	}
+	
+	navItems.forEach(item => item.addEventListener('click', navList.classList.remove('show')))
+
     window.addEventListener('scroll', addShadow )
 });
+

@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 82px;
+}
+
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -115,6 +119,12 @@ header .hero-img .fa-chevron-down {
 }
 .aboutus .aboutus-card-text {
   font-size: 14px;
+}
+.aboutus .aboutus-hover {
+  transition: color 0.5s;
+}
+.aboutus .aboutus-hover:hover {
+  color: #2a92d3;
 }
 
 @media (min-width: 1200px) {
