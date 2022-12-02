@@ -1,12 +1,98 @@
+@import './colors';
+
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgb(90, 88, 88);
+}
+
+span {
+    font-weight: bolder;
+    color: $blue-color;
+}
+
+// navigation
+nav {
+	text-transform: uppercase;
+
+	a.nav-link {
+		color: $white-color;
+	}
+
+	a.nav-link:hover {
+		color: $blue-color;
+	}
+
+    .fa-bars {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        color: $white-color;
+        font-weight: bold;
+    }
+
+    .active {
+        color: $blue-color
+    }
+}
+
+// header
+header {
+    color: $white-color;
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    .hero-img {
+        position: relative;
+        height: 100vh;
+        background-image: url('../img/qatar-ga45af88d6_1920.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: -1;
+    }
+
+    .hero-shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .4);
+        z-index: -2;
+    }
+
+    .hero-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        padding: 10px;
+        text-align: center;
+        z-index: 2;
+
+        .hero {
+            font-size: 50px;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+   header {
+    .hero-img {
+        position: relative;
+        height: 100vh;
+        background-image: url('../img/qatar-ga45af88d6_1920.jpg');
+    }
+   }
 }

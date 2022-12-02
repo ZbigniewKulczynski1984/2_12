@@ -9,4 +9,74 @@
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
+  background-color: rgb(90, 88, 88);
+}
+
+span {
+  font-weight: bolder;
+  color: #2a92d3;
+}
+
+nav {
+  text-transform: uppercase;
+}
+nav a.nav-link {
+  color: #fff;
+}
+nav a.nav-link:hover {
+  color: #2a92d3;
+}
+nav .fa-bars {
+  padding: 10px;
+}
+nav .navbar-brand {
+  color: #fff;
+  font-weight: bold;
+}
+nav .active {
+  color: #2a92d3;
+}
+
+header {
+  color: #fff;
+}
+header h1 {
+  text-transform: uppercase;
+}
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/qatar-ga45af88d6_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -2;
+}
+header .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  z-index: 2;
+}
+header .hero-text .hero {
+  font-size: 50px;
+}
+
+@media (min-width: 1200px) {
+  header .hero-img {
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/qatar-ga45af88d6_1920.jpg");
+  }
 }/*# sourceMappingURL=main.css.map */
