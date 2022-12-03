@@ -38,6 +38,10 @@ h2 {
   background-color: #2a92d3;
 }
 
+.price-box {
+  margin: 20px;
+}
+
 nav {
   text-transform: uppercase;
   z-index: 1;
