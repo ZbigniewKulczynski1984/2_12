@@ -151,11 +151,16 @@ header {
 }
 
 .portfolio {
+	position: relative;
+
 	.carusel-item {
 		height: 600px;
 	}
-	.button:hover {
-		color: $main-color;
+
+	.cards{
+		position: absolute;
+		left: 50%;
+		top: 50%;
 	}
 }
 
@@ -180,6 +185,7 @@ header {
 		}
 	}
 }
+	
 
 @media (min-width: 375px) {
 	header {
