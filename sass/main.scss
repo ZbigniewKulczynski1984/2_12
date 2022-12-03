@@ -125,6 +125,7 @@ header {
 // main
 
 .aboutus {
+
     i {
         margin-top: 20px;
         font-size: 30px;
@@ -148,6 +149,16 @@ header {
         color: $main-color;
     }
 }
+
+.portfolio {
+	.carusel-item {
+		height: 600px;
+	}
+	.button:hover {
+		color: $main-color;
+	}
+}
+
 
 @media (min-width: 1200px) {
 	header {
