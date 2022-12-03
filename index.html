@@ -49,8 +49,8 @@
             <a class="nav-link" href="#aboutus">about us</a>
             <a class="nav-link" href="#portfolio">portfolio</a>
             <a class="nav-link" href="#prices">prices</a>
-            <a class="nav-link" href="#team<">team</a>
-            <!-- <a class="nav-link" href="#achievements">achievements</a> -->
+            <!-- <a class="nav-link" href="#team<">team</a> -->
+            <a class="nav-link" href="#achievements">achievements</a>
             <a class="nav-link" href="#contact">contact</a>
           </div>
         </div>
@@ -120,41 +120,50 @@
         </div>
       </section>
 
-      <section id="portfolio" class="portfolio" bg-light py-5>
+      <section id="portfolio" class="portfolio" bg-light py-5 mb-5>
         <h2>Portfolio</h2>
         <div class="underline"></div>
 
         <div class="container">
           <!-- mobile -->
-          <div class="cards">
-            <div class="card d-lg-none"  style="width: 18rem;">
+          <div
+            class="cards d-lg-none d-flex flex-column align-items-center gap-3"
+            style="width: 100%;"
+          >
+            <div class="card" style="width: 26rem;">
               <img
                 src="./img/football-small.jpg"
                 class="card-img-top"
                 alt="football game"
               />
               <div class="card-body">
-                <p class="card-text">Take you friends on football game</p>
+                <p class="card-text" style="text-align: center;">
+                  Take you friends on football game
+                </p>
               </div>
             </div>
-            <div class="card d-lg-none" style="width: 18rem;">
+            <div class="card" style="width: 26rem;">
               <img
                 src="./img/artificial-islands-small.jpg"
                 class="card-img-top"
                 alt="artificial island"
               />
               <div class="card-body">
-                <p class="card-text">Visit artificial island</p>
+                <p class="card-text" style="text-align: center;">
+                  Visit amazing artificial island
+                </p>
               </div>
             </div>
-            <div class="card d-lg-none" style="width: 18rem;">
+            <div class="card" style="width: 26rem;">
               <img
                 src="./img/party-small.jpg"
                 class="card-img-top"
                 alt="artificial island"
               />
               <div class="card-body">
-                <p class="card-text">Party on beach</p>
+                <p class="card-text" style="text-align: center;">
+                  Party with you friends the on beach
+                </p>
               </div>
             </div>
           </div>
@@ -162,7 +171,7 @@
           <!-- desktop -->
           <div
             id="carouselExampleIndicators"
-            class="carousel slide  d-none d-lg-block"
+            class="carousel slide d-none d-lg-block"
             data-bs-ride="carusel "
           >
             <div class="carousel-indicators">
@@ -260,6 +269,53 @@
               ></span>
               <span class="visually-hidden">Next</span>
             </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements" class="achievements" py-5>
+        <h2>Achievements</h2>
+        <div class="underline"></div>
+
+        <div class="container">
+          <div class="row achievements-list text-center">
+
+            <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+              <i class="fas fa-thumbs-up"></i>
+              <p class="achievement-number">100%</p>
+              <p class="achievement-text">satisfied customers</p>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+              <i class="fas fa-trophy"></i>
+              <p class="achievement-number">50</p>
+              <p class="achievement-text">awards won</p>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+              <i class="fas fa-user-friends"></i>
+              <p class="achievement-number">219</p>
+              <p class="achievement-text">workers</p>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+              <i class="fas fa-building"></i>
+              <p class="achievement-number">5</p>
+              <p class="achievement-text">modern offices</p>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+              <i class="fas fa-dice"></i>
+              <p class="achievement-number">320 000</p>
+              <p class="achievement-text">travels</p>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+              <i class="fas fa-share-alt"></i>
+              <p class="achievement-number">200 000</p>
+              <p class="achievement-text">fans on social media</p>
+            </div>
+
           </div>
         </div>
       </section>

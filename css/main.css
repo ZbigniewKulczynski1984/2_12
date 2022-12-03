@@ -127,6 +127,37 @@ header .hero-img .fa-chevron-down {
   color: #2a92d3;
 }
 
+.portfolio {
+  position: relative;
+}
+.portfolio .carusel-item {
+  height: 600px;
+}
+
+.achievements {
+  padding-top: 30px;
+}
+.achievements i {
+  padding: 10px;
+  font-size: 48px;
+  color: rgb(206, 200, 200);
+  text-shadow: 0 0 5px #000;
+}
+.achievements i:hover {
+  color: #2a92d3;
+  transition: color 0.3s;
+}
+.achievements .achievements-list {
+  padding: 20px 0;
+}
+.achievements .achievements-numbers {
+  font-size: 22px;
+}
+.achievements .achievements-text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 @media (min-width: 1200px) {
   header .hero-img {
     position: relative;

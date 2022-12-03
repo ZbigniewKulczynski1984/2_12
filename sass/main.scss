@@ -9,7 +9,7 @@
 }
 
 html {
-    scroll-padding-top: 82px;
+	scroll-padding-top: 82px;
 }
 
 body {
@@ -125,29 +125,27 @@ header {
 // main
 
 .aboutus {
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
 
-    i {
-        margin-top: 20px;
-        font-size: 30px;
-        
-    }
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
 
-    .aboutus-card-title {
-        font-size: 18px;
-        text-transform: uppercase;
-    }
+	.aboutus-card-text {
+		font-size: 14px;
+	}
 
-    .aboutus-card-text {
-        font-size: 14px;
-    }
+	.aboutus-hover {
+		transition: color 0.5s;
+	}
 
-    .aboutus-hover {
-        transition: color 0.5s;
-    }
-
-    .aboutus-hover:hover {
-        color: $main-color;
-    }
+	.aboutus-hover:hover {
+		color: $main-color;
+	}
 }
 
 .portfolio {
@@ -156,14 +154,33 @@ header {
 	.carusel-item {
 		height: 600px;
 	}
-
-	.cards{
-		position: absolute;
-		left: 50%;
-		top: 50%;
-	}
 }
 
+.achievements {
+	padding-top: 30px;
+	
+	i {
+		padding: 10px;
+		font-size: 48px;
+		color: rgb(206, 200, 200);
+		text-shadow: 0 0 5px #000;
+	}
+
+	i:hover {
+		color: $main-color;
+		transition: color .3s;
+	}
+	.achievements-list{
+		padding: 20px 0;
+	}
+	.achievements-numbers{
+		font-size: 22px;
+	}
+	.achievements-text{
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+}
 
 @media (min-width: 1200px) {
 	header {
@@ -185,7 +202,6 @@ header {
 		}
 	}
 }
-	
 
 @media (min-width: 375px) {
 	header {
