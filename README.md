@@ -1,4 +1,4 @@
-# Qatar travel
+# Qatar travel - responsive web
 
 ## HTML
 ## SCSS
